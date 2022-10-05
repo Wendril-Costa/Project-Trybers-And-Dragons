@@ -4,11 +4,11 @@ class Dwarf extends Race {
   private static _createdRacesInstances = 0;
   
   constructor(
-    _name: string, 
-    _dexterity: number, 
+    name: string, 
+    dexterity: number, 
     private _maxLifePoints: number = 80,
   ) {
-    super(_name, _dexterity);
+    super(name, dexterity);
     Dwarf._createdRacesInstances += 1;
   }
 
