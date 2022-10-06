@@ -75,9 +75,9 @@ class Character implements Fighter {
     this._lifePoints = this._maxLifePoints;
   }
 
-  special?(): void {
-    this._maxLifePoints += getRandomInt(10, 25);
-  }
+  // special?(): void {
+  //   this._maxLifePoints += getRandomInt(10, 25);
+  // }
 }
   
 export default Character;

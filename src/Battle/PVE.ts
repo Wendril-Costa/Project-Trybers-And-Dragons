@@ -8,7 +8,7 @@ class PVE extends Battle {
   
   fight(): number {
     this._monsters.map((monster: SimpleFighter) => {
-      while (this._player.lifePoints > -1 && monster.lifePoints > -1) {
+      if (this._player.lifePoints > -1 && monster.lifePoints > -1) {
         this._player.attack(monster);
         monster.attack(this._player);
       }
